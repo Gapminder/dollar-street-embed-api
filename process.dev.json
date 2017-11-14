@@ -1,0 +1,29 @@
+{
+  "apps": [
+      {
+          "name": "DS_Embed_Api",
+          "script": "ds.embed.api.js",
+          "exec_interpreter": "node",
+          "exec_mode": "cluster",
+          "kill_timeout" : 3000,
+          "merge_logs": true,
+          "max_restarts": 20,
+          "instances": 1,
+          "max_memory_restart": "400M",
+          "watch": [
+              "dist/**/*.*"
+          ],
+          "env": {
+            "PORT": 8016,
+            "CACHE_TIME": 7200,
+            "MONGODB_URL": "mongodb://localhost/dollarstreet",
+            "S3_REGION": "eu-west-1",
+            "S3_ACCESS_KEY_ID": "AKIAIA3JRVRJBX25UJQA",
+            "S3_SECRET_ACCESS_KEY": "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",
+            "S3_SERVER_NAME": "//static.dollarstreet.org/",
+            "S3_BUCKET": "static.dollarstreet.org",
+            "STRIPE_PRIVATE_KEY": "sk_test_HystD8sb9o2lSem79Q1ymazB"
+          }
+      }
+  ]
+}

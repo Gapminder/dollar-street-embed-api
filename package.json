@@ -1,0 +1,56 @@
+{
+  "name": "Dollar_Street_Embed_Api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ds.embed.api.js",
+  "scripts": {
+    "start": "node ./ds.embed.api.js",
+    "dev": "concurrently \"npm run watch\" \"pm2 start process.dev.json --no-daemon\"",
+    "watch": "tsc -p tsconfig.json -w",
+    "build": "tsc -p tsconfig.json --skipLibCheck"
+  },
+  "pre-commit": [
+    "flow.lint"
+  ],
+  "dependencies": {
+    "aws-sdk": "2.65.0",
+    "body-parser": "1.17.2",
+    "compression": "1.6.2",
+    "cors": "2.8.3",
+    "eslint-config-valorsoft": "0.1.0",
+    "express": "4.15.3",
+    "express-redis-cache": "0.5.1",
+    "lodash": "4.17.4",
+    "mongoose": "4.10.5",
+    "nconf": "0.8.4",
+    "newrelic": "1.40.0",
+    "pm2": "^2.7.1",
+    "shelljs": "0.7.4"
+  },
+  "devDependencies": {
+    "@types/async": "2.0.40",
+    "@types/core-js": "0.9.36",
+    "@types/express": "4.0.35",
+    "@types/lodash": "4.14.65",
+    "@types/mime": "0.0.29",
+    "@types/mongoose": "4.7.16",
+    "@types/node": "7.0.7",
+    "@types/promise": "7.1.30",
+    "async": "2.4.1",
+    "concurrently": "^3.5.0",
+    "typescript": "2.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gapminder/dollar-street-consumer-api.git"
+  },
+  "keywords": [
+    "dollarstreet"
+  ],
+  "author": "Valor Software",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gapminder/dollar-street-consumer-api/issues"
+  },
+  "homepage": "https://github.com/Gapminder/dollar-street-consumer-api#readme"
+}
