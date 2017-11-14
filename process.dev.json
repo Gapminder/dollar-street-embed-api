@@ -1,0 +1,22 @@
+{
+  "apps": [
+      {
+          "name": "DS_Embed_Api",
+          "script": "ds.embed.api.js",
+          "exec_interpreter": "node",
+          "exec_mode": "cluster",
+          "kill_timeout" : 3000,
+          "merge_logs": true,
+          "max_restarts": 20,
+          "instances": 1,
+          "max_memory_restart": "400M",
+          "watch": [
+              "dist/**/*.*"
+          ],
+          "env": {
+            "PORT": 8016,
+            "MONGODB_URL": "mongodb://localhost/dollarstreet",
+          }
+      }
+  ]
+}
