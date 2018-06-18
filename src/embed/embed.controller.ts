@@ -35,6 +35,9 @@ module.exports = (app: any) => {
               <meta property="og:title" content="Dollar Street">
               <meta property="og:description" content="Imagine the world as a street. Everyone lives on Dollar Street. The richest to the left and the poorest to the right. Every else live somewhere in between. Where would you live? Visit Dollar Street and see homes from hundreds of homes from all over the World.">
               <meta property="og:type" content="article">
+              <meta property="fb:app_id" content="135732313883245">
+              <meta property="article:publisher" content="www.facebook.com/gapminderdollarstreet/">
+              <meta property="article:author" content="www.facebook.com/gapminderdollarstreet/">
             </head>
           `;
           res.write(html);
