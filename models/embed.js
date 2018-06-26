@@ -6,7 +6,11 @@ const Schema = mongoose.Schema;
 const embedSchema = new Schema({
   places: [Schema.Types.ObjectId],
   targetUrl: String,
-  imageUrl: String
+  imageUrl: String,
+  imageSize: {
+    width: Number,
+    height: Number
+  }
 });
 
 // footerSchema.index({'translations.lang': 1});
