@@ -2,6 +2,7 @@
 
 import mongoose = require('mongoose');
 import { ObjectID } from 'mongodb';
+import { get } from 'lodash';
 
 const Embed = mongoose.model('Embed');
 
@@ -38,8 +39,8 @@ module.exports = (app: any) => {
               <meta property="fb:app_id" content="135732313883245">
               <meta property="article:publisher" content="www.facebook.com/gapminderdollarstreet/">
               <meta property="article:author" content="www.facebook.com/gapminderdollarstreet/">
-              <meta property="og:image:width" content="${data.imageSize.width || 1920}">
-              <meta property="og:image:height" content="${data.imageSize.height || 1000}">
+              <meta property="og:image:width" content="${ get(data.imageSize, 'width', '')}">
+              <meta property="og:image:height" content="${ get(data.imageSize, 'height', '')}">
               <meta property="og:image:type" content="image/jpeg" />
               <meta property="og:image:alt" content="dollarstreet.org page preview" />
             </head>
