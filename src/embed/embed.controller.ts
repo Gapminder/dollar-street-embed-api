@@ -33,6 +33,7 @@ module.exports = (app: any) => {
             <html lang="en" prefix="og: http://ogp.me/ns#">
             <head>
               <meta property="og:image" content="${data.imageUrl}">
+              <meta property="twitter:image" content="${data.imageUrl}">
               <meta property="og:title" content="Dollar Street">
               <meta property="og:description" content="Imagine the world as a street. Everyone lives on Dollar Street. The poorest to the left and the richest on the right. Every else live somewhere in between. Where would you live? Visit Dollar Street and see homes from hundreds of homes from all over the World.">
               <meta property="og:type" content="article">
