@@ -32,22 +32,23 @@ module.exports = (app: any) => {
             <!DOCTYPE html>
             <html lang="en" prefix="og: http://ogp.me/ns#">
             <head>
+              <meta name="twitter:card" content="summary">
               <meta property="og:image" content="${data.imageUrl}">
-              <meta property="og:title" content="Dollar Street">
-              <meta property="og:type" content="article">
-              <meta property="og:description" content="Imagine the world as a street where everyone lives. The poorest live to the left and the richest, to the right. Everybody else lives somewhere in between. Visit Dollar Street to see beds, stoves, toothbrushes and hundreds of other things in homes from all over the World at dollarstreet.org">
-              <meta name="twitter:card" content="summary_large_image">
-              <meta name="twitter:title" content="Dollar Street">
-              <meta name="twitter:image" content="${data.imageUrl}">
-              <meta name="twitter:image:alt" content="dollarstreet.org page preview" />
-              <meta name="twitter:description" content="Imagine the world as a street where everyone lives. The poorest live to the left and the richest, to the right. Everybody else lives somewhere in between. Visit Dollar Street to see beds, stoves, toothbrushes and hundreds of other things in homes from all over the World at dollarstreet.org">
-              <meta name="twitter:site" content="${data.targetUrl}">
-              <meta name="twitter:creator"  content="dollarstreet.org">
-              <meta property="fb:app_id" content="135732313883245">
               <meta property="og:image:width" content="${ get(data.imageSize, 'width', '')}">
               <meta property="og:image:height" content="${ get(data.imageSize, 'height', '')}">
               <meta property="og:image:type" content="image/jpeg" />
               <meta property="og:image:alt" content="dollarstreet.org page preview" />
+              <meta property="og:title" content="Dollar Street">
+              <meta property="og:type" content="article">
+              <meta property="og:description" content="Imagine the world as a street where everyone lives. The poorest live to the left and the richest, to the right. Everybody else lives somewhere in between. Visit Dollar Street to see beds, stoves, toothbrushes and hundreds of other things in homes from all over the World at dollarstreet.org">
+              
+              <meta name="twitter:title" content="Dollar Street">
+              <meta name="twitter:image" content="${data.imageUrl}">
+              <meta name="twitter:image:alt" content="dollarstreet.org page preview" />
+              <meta name="twitter:description" content="Imagine the world as a street where everyone lives. The poorest live to the left and the richest, to the right. Everybody else lives somewhere in between. Visit Dollar Street to see beds, stoves, toothbrushes and hundreds of other things in homes from all over the World at dollarstreet.org">
+              <meta name="twitter:creator"  content="@dollarstreet_">
+              <meta name="twitter:site"  content="@dollarstreet_">
+              <meta property="fb:app_id" content="135732313883245">
             </head>
           `;
           res.write(html);
