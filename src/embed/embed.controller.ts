@@ -50,6 +50,7 @@ module.exports = (app: any) => {
               <meta name="twitter:site"  content="@dollarstreet_">
               <meta property="fb:app_id" content="135732313883245">
             </head>
+            <body></body>
           `;
           res.write(html);
           res.end();
