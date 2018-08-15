@@ -41,7 +41,6 @@ module.exports = (app: any) => {
               <meta property="og:title" content="Dollar Street">
               <meta property="og:type" content="article">
               <meta property="og:description" content="Imagine the world as a street where everyone lives. The poorest live to the left and the richest, to the right. Everybody else lives somewhere in between. Visit Dollar Street to see beds, stoves, toothbrushes and hundreds of other things in homes from all over the World at dollarstreet.org">
-              <meta property="og:url" content="${data.targetUrl}">
               
               <meta name="twitter:title" content="Dollar Street">
               <meta name="twitter:image" content="${data.imageUrl}">
