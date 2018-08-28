@@ -32,7 +32,8 @@ module.exports = (app: any) => {
             <!DOCTYPE html>
             <html lang="en" prefix="og: http://ogp.me/ns#">
             <head>
-              <meta name="twitter:card" content="summary">
+                <meta charset="utf-8">
+              <meta name="twitter:card" content="summary_large_image">
               <meta property="og:image" content="${data.imageUrl}">
               <meta property="og:image:width" content="${ get(data.imageSize, 'width', '')}">
               <meta property="og:image:height" content="${ get(data.imageSize, 'height', '')}">
@@ -49,6 +50,8 @@ module.exports = (app: any) => {
               <meta name="twitter:creator"  content="@dollarstreet_">
               <meta name="twitter:site"  content="@dollarstreet_">
               <meta property="fb:app_id" content="135732313883245">
+              <meta name="twitter:widgets:new-embed-design" content="on"/>
+              <meta name="twitter:widgets:csp" content="on"/>
             </head>
             <body></body>
           `;
